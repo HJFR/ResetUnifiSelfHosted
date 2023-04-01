@@ -1,0 +1,1 @@
+systemctl stop unifi && perl -pe 's/is_default\=false/is_default=true/g' -i /var/lib/unifi/system.properties && systemctl start unifi
